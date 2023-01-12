@@ -1,0 +1,7 @@
+#!/usr/bin/ruby
+
+db = [
+"los_carnalitos"
+]
+
+puts db.sample
