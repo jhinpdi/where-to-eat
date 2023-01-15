@@ -1,12 +1,12 @@
 # Listing
 
-- Los Carnalitos
-
 ```rust
-use rand::seq::SliceRandom;
+use rand::Rng;
 
 fn main() {
     let db = vec!["los_carnalitos"];
-    println!("{:?}", db.choose(&mut rand::thread_rng()));
+    let mut rng = rand::thread_rng();
+    let rand_idx: u8 = rng.gen();
+    println!("{:?}", db.get(rand_idx));
 }
 ```

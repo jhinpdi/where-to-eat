@@ -4,3 +4,12 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Where to Eat"
+
+[build]
+build-dir = "docs"
+
+[output.html]
+default-theme = "ayu"
+
+[dependencies]
+rand = "0.8.4"
